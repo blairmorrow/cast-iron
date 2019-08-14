@@ -30,6 +30,18 @@ header {
 	
 }
 
+.headerLink:hover, #headerLinkRight:hover {
+	
+	-webkit-animation-name: linkAnimation;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	
+	animation-name: linkAnimation;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	
+}
+
 .headerLink {
 	
 	margin-right: 2%;
@@ -62,3 +74,48 @@ header {
 	margin-right: 5%;
 	
 }
+
+@-webkit-keyframes linkAnimation {
+	
+	0% {
+		
+		color: #FFF;
+		
+	}
+	
+	25% {
+		
+		color: #DCDCDC;
+		
+	}
+	
+	100% {
+		
+		color: #DCDCDC;
+		
+	}
+	
+}
+
+@keyframes linkAnimation {
+	
+	0% {
+		
+		color: #FFF;
+		
+	}
+	
+	25% {
+		
+		color: #DCDCDC;
+		
+	}
+	
+	100% {
+		
+		color: #DCDCDC;
+		
+	}
+	
+}
+
