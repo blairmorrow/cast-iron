@@ -17,7 +17,7 @@ span {
 	
 }
 
-.header {
+.header, .footer {
 	
 	background-color: #000;
 	height: 80px;
@@ -64,24 +64,15 @@ span {
 
 .contentImage {
 	
-	width: 100%;
+	display: block;
 	height: auto;
-	
-}
-
-.contentAnchor {
-	
-	padding-top: 80px;
+	width: 100%;
 	
 }
 
 .contentHeader {
 	
 	color: #BD2026;
-	font-family: 'Bitter', serif;
-	font-size: 1.6em;
-	font-weight: 700;
-	text-align: center;
 	
 }
 
@@ -93,6 +84,21 @@ span {
 	padding-left: 30%;
 	padding-right: 30%;
 	text-align: justify;
+	
+}
+
+.footerHeader {
+	
+	color: #FFF;
+	
+}
+
+.contentHeader, .footerHeader {
+	
+	font-family: 'Bitter', serif;
+	font-size: 1.6em;
+	font-weight: 700;
+	text-align: center;
 	
 }
 
@@ -119,7 +125,13 @@ span {
 	
 }
 
-#ben {
+#about {
+	
+	padding: 0;
+	
+}
+
+#benZhou {
 	
 	border-radius: 3px;
 	display: block;
