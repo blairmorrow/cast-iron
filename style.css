@@ -3,11 +3,17 @@ Project: Cast Iron
 Author: Blair Morrow
 */
 
-@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Roboto+Mono:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Holtwood+One+SC|Roboto+Mono:300&display=swap');
 
 body {
 	
 	margin: 0;
+	
+}
+
+span {
+	
+	color: #BD2026;
 	
 }
 
@@ -25,7 +31,7 @@ body {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 0.8em;
 	line-height: 90px;
-	margin-left: 20px;
+	margin-left: 30px;
 	text-decoration: none;
 	
 }
@@ -50,15 +56,31 @@ body {
   
 }
 
-.content {
+.sticky + .content {
 	
-	padding: 16px;
+	padding-top: 80px;
 	
 }
 
-.sticky + .content {
+.contentImage {
 	
-	padding-top: 96px;
+	width: 100%;
+	
+}
+
+.contentAnchor {
+	
+	padding-top: 80px;
+	
+}
+
+.contentHeader {
+	
+	color: #BD2026;
+	font-family: 'Bitter', serif;
+	font-size: 1.6em;
+	font-weight: 700;
+	text-align: center;
 	
 }
 
