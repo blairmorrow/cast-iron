@@ -1,189 +1,113 @@
-/*
+﻿/*
 Project: Cast Iron
 Author: Blair Morrow
 */
 
-@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Holtwood+One+SC|Roboto+Mono:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
 body {
-	
-	margin: 0;
-	
+    margin: 0;
 }
 
-span {
-	
-	color: #BD2026;
-	
-}
-
-.header, .footer {
-	
-	background-color: #000;
-	height: 80px;
-	padding: 1px 2%;
-	
-}
-
-.headerLink {
-	
-	color: #FFF;
-	font-family: 'Roboto Mono', monospace;
-	font-size: 0.8em;
-	line-height: 90px;
-	margin-left: 30px;
-	text-decoration: none;
-	
-}
-
-.headerLink:hover {
-	
-	-webkit-animation-name: linkAnimation;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-fill-mode: forwards;
-	
-	animation-name: linkAnimation;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-	
+.header {
+    background-color: #000;
+    height: 100px;
 }
 
 .sticky {
-	
-	position: fixed;
-	top: 0;
-	width: 100%;
-  
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .sticky + .content {
-	
-	padding-top: 80px;
-	
+    padding-top: 100px;
 }
 
-.contentImage {
-	
-	display: block;
-	height: auto;
-	width: 100%;
-	
+.header img {
+    margin-left: 1%;
 }
 
-.contentHeader {
-	
-	color: #BD2026;
-	
+.navigation {
+    height: 100px;
+    position: fixed;
+    right: 1%;
+    top: 0;
 }
 
-.contentText {
-	
-	font-family: 'Bitter', serif;
-	font-size: 1.2em;
-	font-weight: 300;
-	padding-left: 30%;
-	padding-right: 30%;
-	text-align: justify;
-	
+.navigationLink {
+    -webkit-animation-name: linkAnimationOut;
+    -webkit-animation-duration: 1s;
+    animation-name: linkAnimationOut;
+    animation-duration: 1s;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.4em;
+    line-height: 100px;
+    margin-left: 25px;
+    padding: 10px;
+    text-decoration: none;
 }
 
-.footerHeader {
-	
-	color: #FFF;
-	
+.navigationLink:hover {
+    -webkit-animation-name: linkAnimationIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: linkAnimationIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
-.contentHeader, .footerHeader {
-	
-	font-family: 'Bitter', serif;
-	font-size: 1.6em;
-	font-weight: 700;
-	text-align: center;
-	
+.content img {
+
+    display: block;
+    width: auto;
 }
 
-#castIron {
-	
-	font-family: 'Holtwood One SC', serif;
-	font-size: 1.8em;
-	letter-spacing: 0.03em;
-	
+.footer {
+    background-color: #000;
+    height: 60px;
 }
 
-#castIron a {
-	
-	color: #FFF;
-	text-decoration: none;
-	
+@-webkit-keyframes linkAnimationIn {
+    0% {
+        color: #FFF;
+    }
+    100% {
+        background-color: #FFF;
+        color: #000;
+    }
 }
 
-#navigation {
-	
-	position: fixed;
-	right: 2%;
-	top: 0;
-	
+@keyframes linkAnimationIn {
+    0% {
+        color: #FFF;
+    }
+    100% {
+        background-color: #FFF;
+        color: #000;
+    }
 }
 
-#about {
-	
-	padding: 0;
-	
+@-webkit-keyframes linkAnimationOut {
+    0% {
+        background-color: #FFF;
+        color: #000;
+    }
+
+    100% {
+        color: #FFF;
+    }
 }
 
-#benZhou {
-	
-	border-radius: 3px;
-	display: block;
-	height: 200px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	margin-top: 10px;
-	width: 200px;
-	
-}
+@keyframes linkAnimationOut {
+    0% {
+        background-color: #FFF;
+        color: #000;
+    }
 
-@-webkit-keyframes linkAnimation {
-	
-	0% {
-		
-		color: #FFF;
-		
-	}
-	
-	25% {
-		
-		color: #DCDCDC;
-		
-	}
-	
-	100% {
-		
-		color: #DCDCDC;
-		
-	}
-	
-}
-
-@keyframes linkAnimation {
-	
-	0% {
-		
-		color: #FFF;
-		
-	}
-	
-	25% {
-		
-		color: #DCDCDC;
-		
-	}
-	
-	100% {
-		
-		color: #DCDCDC;
-		
-	}
-	
+    100% {
+        color: #FFF;
+    }
 }
