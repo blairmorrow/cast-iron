@@ -61,14 +61,14 @@ body {
 
 .content img {
     display: block;
-    width: auto;
+    width: 100%;
 }
 
 .content {
     text-align: center;
 }
 
-.locationContent {
+.innerContent {
     display: inline-block;
     height: auto;
     text-align: center;
@@ -111,6 +111,31 @@ body {
 .contentLineBottom {
     margin-bottom: 80px;
     margin-top: 40px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 27px;
+}
+
+.menuItem {
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    height: auto;
+    width: 20%;
+}
+
+.contentLine {
+    width: 80%;
+}
+
+.contentSubtext {
+    color: #000;
+    font-family: 'Manjari', sans-serif;
+    font-size: 0.9em;
 }
 
 .footer {
