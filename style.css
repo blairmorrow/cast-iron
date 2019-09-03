@@ -60,9 +60,57 @@ body {
 }
 
 .content img {
-
     display: block;
     width: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+.locationContent {
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.contentLineTop {
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.contentHeader {
+    color: #BD2026;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.6em;
+}
+
+.contentText {
+    color: #000;
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.2em;
+}
+
+.mapouter {
+    border: 1px solid #DCDCDC;
+    border-radius: 5px;
+    display: inline-block;
+    height: 400px;
+    text-align: right;
+    width: 800px;
+}
+
+.gmap_canvas {
+    background: none !important;
+    height: 400px;
+    overflow: hidden;
+    width: 800px;
+}
+
+.contentLineBottom {
+    margin-bottom: 80px;
+    margin-top: 40px;
 }
 
 .footer {
