@@ -25,13 +25,13 @@ body {
 }
 
 .header img {
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
 .navigation {
     height: 100px;
     position: fixed;
-    right: 1%;
+    right: 3%;
     top: 0;
 }
 
@@ -141,6 +141,12 @@ body {
 .footer {
     background-color: #000;
     height: 60px;
+    text-align: center;
+}
+
+.footer img {
+    height: 55px;
+    width: auto;
 }
 
 @-webkit-keyframes linkAnimationIn {
