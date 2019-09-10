@@ -6,32 +6,35 @@ Author: Blair Morrow
 /*Import the font we will use for the links and content text from the Google Fonts API*/
 @import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
-/*Body style*/
+/*Body style - no margin around the edges of the body (fits the structure to the web page)*/
 body {
     margin: 0;
 }
 
-/*Header style*/
+/*Header style - 100 pixels tall with a black background colour*/
 .header {
     background-color: #000;
     height: 100px;
 }
 
+/*Sticky header tuning - fix the header to the top of the page at the width size of the devices browser*/
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
+/*Sticky header should be as tall as the header itself (100px)*/
 .sticky + .content {
     padding-top: 100px;
 }
 
+/*Cast Iron logo image (top left)*/
 .header img {
     margin-left: 3%;
 }
 
-/*Navigation style*/
+/*Navigation style - fix it to the right side of the header with the same height as the header*/
 .navigation {
     height: 100px;
     position: fixed;
@@ -39,6 +42,7 @@ body {
     top: 0;
 }
 
+/*Navigation link - white coloured text with its own container and a link animation*/
 .navigationLink {
     -webkit-animation-name: linkAnimationOut;
     -webkit-animation-duration: 1s;
@@ -54,6 +58,7 @@ body {
     text-decoration: none;
 }
 
+/*Navigation hover link animation*/
 .navigationLink:hover {
     -webkit-animation-name: linkAnimationIn;
     -webkit-animation-duration: 1s;
@@ -64,15 +69,18 @@ body {
 }
 
 /*Content style*/
+/*Image proportions for the opening image and other images in the content div*/
 .content img {
     display: block;
     width: 100%;
 }
 
+/*Align all elements inside the content div to the center*/
 .content {
     text-align: center;
 }
 
+/*Align inner content element to the center with a width of 60%*/
 .innerContent {
     display: inline-block;
     height: auto;
@@ -80,17 +88,20 @@ body {
     width: 60%;
 }
 
+/*Content line style top - margin alignment towards the top*/
 .contentLineTop {
     margin-bottom: 40px;
     margin-top: 80px;
 }
 
+/*Content header text - red colour using the font that we imported into our CSS document*/
 .contentHeader {
     color: #BD2026;
     font-family: 'Manjari', sans-serif;
     font-size: 1.6em;
 }
 
+/*Content text - white colour with a smaller font size than our content header*/
 .contentText {
     color: #000;
     font-family: 'Manjari', sans-serif;
@@ -98,27 +109,31 @@ body {
     line-height: 1.4em;
 }
 
+/*Outer Google Map embed styling - slight border and sizing for the container of the Google Maps search*/
 .mapouter {
     border: 1px solid #DCDCDC;
     border-radius: 5px;
     display: inline-block;
     height: 400px;
     text-align: right;
-    width: 800px;
+    width: 570px;
 }
 
+/*Inner Google Map embed styling - allows the map to function correctly when wanting to look at the surrounding location on the map*/
 .gmap_canvas {
     background: none !important;
     height: 400px;
     overflow: hidden;
-    width: 800px;
+    width: 570px;
 }
 
+/*Content line style bottom - margin alignment towards the bottom*/
 .contentLineBottom {
     margin-bottom: 80px;
     margin-top: 40px;
 }
 
+/*Content subtext style - white colour with a smaller font size than the content text and a margin to split out the different menu sections*/
 .contentSubtext {
     color: #000;
     font-family: 'Manjari', sans-serif;
@@ -126,15 +141,17 @@ body {
     margin-top: 30px;
     padding-left: 25%;
     padding-right: 25%;
+    text-align: justify;
 }
 
-/*Footer style*/
+/*Footer style - black background with a height of 60 pixels*/
 .footer {
     background-color: #000;
     height: 60px;
     text-align: center;
 }
 
+/*Cast Iron logo image bottom*/
 .footer img {
     height: 55px;
     width: auto;
