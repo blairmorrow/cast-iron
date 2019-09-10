@@ -72,6 +72,7 @@ body {
 /*Image proportions for the opening image and other images in the content div*/
 .content img {
     display: block;
+    height: auto;
     width: 100%;
 }
 
@@ -133,7 +134,7 @@ body {
     margin-top: 40px;
 }
 
-/*Content subtext style - white colour with a smaller font size than the content text and a margin to split out the different menu sections*/
+/*Content subtext style - white colour with a smaller font size than the content text and a margin to split out the different menu sections, also has its own unique constraints to make it appear more as inner content text*/
 .contentSubtext {
     color: #000;
     font-family: 'Manjari', sans-serif;
