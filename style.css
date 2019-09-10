@@ -3,12 +3,15 @@ Project: Cast Iron
 Author: Blair Morrow
 */
 
+/*Import the font we will use for the links and content text from the Google Fonts API*/
 @import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
 
+/*Body style*/
 body {
     margin: 0;
 }
 
+/*Header style*/
 .header {
     background-color: #000;
     height: 100px;
@@ -28,6 +31,7 @@ body {
     margin-left: 3%;
 }
 
+/*Navigation style*/
 .navigation {
     height: 100px;
     position: fixed;
@@ -59,6 +63,7 @@ body {
     animation-fill-mode: forwards;
 }
 
+/*Content style*/
 .content img {
     display: block;
     width: 100%;
@@ -123,6 +128,7 @@ body {
     padding-right: 25%;
 }
 
+/*Footer style*/
 .footer {
     background-color: #000;
     height: 60px;
@@ -134,17 +140,8 @@ body {
     width: auto;
 }
 
+/*Link animation compatibility across web browsers*/
 @-webkit-keyframes linkAnimationIn {
-    0% {
-        color: #FFF;
-    }
-    100% {
-        background-color: #FFF;
-        color: #000;
-    }
-}
-
-@keyframes linkAnimationIn {
     0% {
         color: #FFF;
     }
@@ -162,6 +159,18 @@ body {
 
     100% {
         color: #FFF;
+    }
+}
+
+/*Link animation*/
+@keyframes linkAnimationIn {
+    0% {
+        color: #FFF;
+    }
+
+    100% {
+        background-color: #FFF;
+        color: #000;
     }
 }
 

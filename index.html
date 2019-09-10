@@ -3,32 +3,32 @@ Project: Cast Iron
 Author: Blair Morrow
 -->
 
-<!DOCTYPE html>
+<!DOCTYPE html><!--Declaration-->
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cast Iron</title>
-        <link rel="icon" type="image/x-icon" href="images/icon.png" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div class="header" id="stickyHeader">
-            <a href="#"><img src="images/logo.png" alt="logo" /></a>
-            <div class="navigation">
-                <a href="#location" class="navigationLink">Location</a>
-                <a href="#menu" class="navigationLink">Menu</a>
-            </div>
-        </div>
-        <div class="content">
-            <img src="images/beefTop.png" alt="beef" height="720" />
-            <img src="images/beefBottom.png" alt="beef" height="80" id="location" />
-            <div class="innerContent">
-                <hr class="contentLineTop" />
-                <h1 class="contentHeader">Location</h1>
-                <h2 class="contentText" style="line-height: 1.1em;">Rotorua Night Market<br />5pm to 9pm</h2>
-                <div class="mapouter">
+<html lang="en"><!--HTML START-->
+    <head><!--HEAD START-->
+        <meta charset="utf-8" /><!--Set the character set for the page-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--Control the page's dimensions and scaling to fit the proportions of any device viewing it-->
+        <title>Cast Iron</title><!--Title of the web page-->
+        <link rel="icon" type="image/x-icon" href="images/icon.png" /><!--Set the favicon to the circular logo image-->
+        <link rel="stylesheet" href="style.css" /><!--Link to CSS stylesheet-->
+    </head><!--HEAD END-->
+    <body><!--BODY START-->
+        <div class="header" id="stickyHeader"><!--HEADER DIV START-->
+            <a href="#"><img src="images/logo.png" alt="logo" /></a><!--Cast Iron logo image at the top left of the page-->
+            <div class="navigation"><!--NAVIGATION DIV START-->
+                <a href="#location" class="navigationLink">Location</a><!--Location link text-->
+                <a href="#menu" class="navigationLink">Menu</a><!--Menu link text-->
+            </div><!--NAVIGATION DIV END-->
+        </div><!--HEADER DIV END-->
+        <div class="content"><!--CONTENT DIV START-->
+            <img src="images/beefTop.png" alt="beef" height="720" /><!--Opening image of beef kebabs (top part)-->
+            <img src="images/beefBottom.png" alt="beef" height="80" id="location" /><!--Bottom part of the image includes the location link to compensate for the height of the sticky header (80px)-->
+            <div class="innerContent"><!--LOCATION DIV START-->
+                <hr class="contentLineTop" /><!--Horizontal line for styling at the top of the div-->
+                <h1 class="contentHeader">Location</h1><!--Location header text-->
+                <h2 class="contentText" style="line-height: 1.1em;">Rotorua Night Market<br />5pm to 9pm</h2><!--Location content text-->
+                <div class="mapouter"><!--Google Maps embed displaying the location of the Rotorua Night Market-->
                     <div class="gmap_canvas">
                         <iframe width="800" height="400" id="gmap_canvas"
                                 src="https://maps.google.com/maps?q=rotorua%20night%20market&t=&z=19&ie=UTF8&iwloc=&output=embed"
@@ -36,23 +36,23 @@ Author: Blair Morrow
                         </iframe>
                     </div>
                 </div>
-                <hr class="contentLineBottom" />
-            </div>
-            <img src="images/chickenTop.png" alt="chicken" height="720" />
-            <img src="images/chickenBottom.png" alt="chicken" height="80" id="menu" />
-            <div class="innerContent">
-                <hr class="contentLineTop" />
-                <h1 class="contentHeader">Menu</h1>
-                <h2 class="contentSubtext" style="margin-top: 23px;"><span class="contentText">Beef</span><br />New Zealand sourced prime beef marinated in exotic herbs and spices. Including: Lemongrass, Kaffir lime leaves, Turmeric, fresh Ginger and Garlic.</h2>
-                <h2 class="contentSubtext"><span class="contentText">Lamb</span><br />Juicy morsels of grass fed lamb leg rubbed with New Zealand Garlic and Toasted Sesame oil.</h2>
-                <h2 class="contentSubtext"><span class="contentText">Pork</span><br />Chinese-style sticky marinated pork skewers with real honey, grilled to perfection.</h2>
-                <h2 class="contentSubtext"><span class="contentText">Chicken</span><br />Izakaya pub inspired premium chicken thigh fillet skewer. Seasoned with Soy Sauce, Hickory Smoke and special Japanese Lager.</h2>
-                <hr class="contentLineBottom" />
-            </div>
-        </div>
-        <div class="footer">
-            <img src="images/logo.png" alt="logo" />
-        </div>
-        <script src="script.js"></script>
-    </body>
-</html>
+                <hr class="contentLineBottom" /><!--Horizontal line for styling at the bootom of the div-->
+            </div><!--LOCATION DIV END-->
+            <img src="images/chickenTop.png" alt="chicken" height="720" /><!--Image of chicken kebabs (top part)-->
+            <img src="images/chickenBottom.png" alt="chicken" height="80" id="menu" /><!--Bottom part of the image includes the menu link to compensate for the height of the sticky header (80px)-->
+            <div class="innerContent"><!--MENU DIV START-->
+                <hr class="contentLineTop" /><!--Horizontal line for styling at the top of the div-->
+                <h1 class="contentHeader">Menu</h1><!--Menu header text-->
+                <h2 class="contentSubtext" style="margin-top: 23px;"><span class="contentText">Beef</span><br />New Zealand sourced prime beef marinated in exotic herbs and spices. Including: Lemongrass, Kaffir lime leaves, Turmeric, fresh Ginger and Garlic.</h2><!--Menu beef content text-->
+                <h2 class="contentSubtext"><span class="contentText">Lamb</span><br />Juicy morsels of grass fed lamb leg rubbed with New Zealand Garlic and Toasted Sesame oil.</h2><!--Menu lamb content text-->
+                <h2 class="contentSubtext"><span class="contentText">Pork</span><br />Chinese-style sticky marinated pork skewers with real honey, grilled to perfection.</h2><!--Menu pork content text-->
+                <h2 class="contentSubtext"><span class="contentText">Chicken</span><br />Izakaya pub inspired premium chicken thigh fillet skewer. Seasoned with Soy Sauce, Hickory Smoke and special Japanese Lager.</h2><!--Menu chicken content text-->
+                <hr class="contentLineBottom" /><!--Horizontal line for styling at the bootom of the div-->
+            </div><!--MENU DIV END-->
+        </div><!--CONTENT DIV END-->
+        <div class="footer"><!--FOOTER DIV START-->
+            <img src="images/logo.png" alt="logo" /><!--Cast Iron logo image at the bottom of the page-->
+        </div><!---->
+        <script src="script.js"></script><!--Link to JavaScript file-->
+    </body><!--BODY END-->
+</html><!--HTML END-->
