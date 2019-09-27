@@ -4,7 +4,7 @@ Author: Blair Morrow
 */
 
 /*Import the font we will use for the links and content text from the Google Fonts API*/
-@import url('https://fonts.googleapis.com/css?family=Manjari&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap');
 
 /*Body style - no margin around the edges of the body (fits the structure to the web page)*/
 body {
@@ -15,6 +15,7 @@ body {
 .header {
     background-color: #000;
     height: 100px;
+    z-index: 999;
 }
 
 /*Sticky header tuning - fix the header to the top of the page at the width size of the devices browser*/
@@ -45,13 +46,14 @@ body {
 /*Navigation link - white coloured text with its own container and a link animation*/
 .navigationLink {
     -webkit-animation-name: linkAnimationOut;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 0.4s;
     animation-name: linkAnimationOut;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
     border: 1px solid #FFF;
     color: #FFF;
-    font-family: 'Manjari', sans-serif;
-    font-size: 1.4em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
     line-height: 100px;
     margin-left: 25px;
     padding: 10px;
@@ -61,10 +63,10 @@ body {
 /*Navigation hover link animation*/
 .navigationLink:hover {
     -webkit-animation-name: linkAnimationIn;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 0.4s;
     -webkit-animation-fill-mode: forwards;
     animation-name: linkAnimationIn;
-    animation-duration: 1s;
+    animation-duration: 0.4s;
     animation-fill-mode: forwards;
 }
 
@@ -85,60 +87,63 @@ body {
 .innerContent {
     display: inline-block;
     height: auto;
+    padding-bottom: 40px;
+    padding-top: 30px;
     text-align: center;
-    width: 60%;
-}
-
-/*Content line style top - margin alignment towards the top*/
-.contentLineTop {
-    margin-bottom: 40px;
-    margin-top: 80px;
+    width: 80%;
 }
 
 /*Content header text - red colour using the font that we imported into our CSS document*/
 .contentHeader {
     color: #BD2026;
-    font-family: 'Manjari', sans-serif;
-    font-size: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 50px;
 }
 
 /*Content text - white colour with a smaller font size than our content header*/
 .contentText {
     color: #000;
-    font-family: 'Manjari', sans-serif;
-    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
     line-height: 1.4em;
 }
 
-/*Outer Google Map embed styling - slight border and sizing for the container of the Google Maps search*/
-.mapouter {
-    border: 1px solid #DCDCDC;
-    border-radius: 5px;
-    display: inline-block;
-    height: 400px;
-    text-align: right;
-    width: 570px;
+/*Container for the google maps embed - resizes the boundaries of the embed to fit the website layout correctly*/
+.mapContainer {
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    margin-left: 25%;
+    width: 50%;
+    z-index: -1;
 }
 
-/*Inner Google Map embed styling - allows the map to function correctly when wanting to look at the surrounding location on the map*/
-.gmap_canvas {
-    background: none !important;
-    height: 400px;
+/*Resizes the google maps embed based on the size of the browser window*/
+.mapResponsive {
+    height: 0;
     overflow: hidden;
-    width: 570px;
+    padding-bottom: 56.25%;
+    position: relative;
 }
 
-/*Content line style bottom - margin alignment towards the bottom*/
-.contentLineBottom {
-    margin-bottom: 80px;
-    margin-top: 40px;
+/*Google maps embed style - fills the size of the container with the functionality of the google maps embed itself*/
+.mapResponsive iframe {
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 /*Content subtext style - white colour with a smaller font size than the content text and a margin to split out the different menu sections, also has its own unique constraints to make it appear more as inner content text*/
 .contentSubtext {
     color: #000;
-    font-family: 'Manjari', sans-serif;
-    font-size: 0.9em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
     margin-top: 30px;
     padding-left: 25%;
     padding-right: 25%;
