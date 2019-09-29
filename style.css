@@ -4,7 +4,7 @@ Author: Blair Morrow
 */
 
 /*Import the font we will use for the links and content text from the Google Fonts API*/
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,500,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Holtwood+One+SC|Roboto:300,500,900&display=swap');
 
 /*Body style - no margin around the edges of the body (fits the structure to the web page)*/
 body {
@@ -46,14 +46,14 @@ body {
 /*Navigation link - white coloured text with its own container and a link animation*/
 .navigationLink {
     -webkit-animation-name: linkAnimationOut;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.35s;
     animation-name: linkAnimationOut;
-    animation-duration: 0.4s;
+    animation-duration: 0.35s;
     border: 1px solid #FFF;
     color: #FFF;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
+    font-family: 'Holtwood One SC', serif;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 100px;
     margin-left: 25px;
     padding: 10px;
@@ -63,10 +63,10 @@ body {
 /*Navigation hover link animation*/
 .navigationLink:hover {
     -webkit-animation-name: linkAnimationIn;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.35s;
     -webkit-animation-fill-mode: forwards;
     animation-name: linkAnimationIn;
-    animation-duration: 0.4s;
+    animation-duration: 0.35s;
     animation-fill-mode: forwards;
 }
 
@@ -87,8 +87,7 @@ body {
 .innerContent {
     display: inline-block;
     height: auto;
-    padding-bottom: 40px;
-    padding-top: 30px;
+    padding-bottom: 15px;
     text-align: center;
     width: 80%;
 }
@@ -96,10 +95,10 @@ body {
 /*Content header text - red colour using the font that we imported into our CSS document*/
 .contentHeader {
     color: #BD2026;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Holtwood One SC', serif;
     font-size: 32px;
-    font-weight: 900;
-    margin-bottom: 50px;
+    font-weight: 400;
+    padding-bottom: 5px;
 }
 
 /*Content text - white colour with a smaller font size than our content header*/
@@ -145,7 +144,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    margin-top: 30px;
+    padding-bottom: 10px;
     padding-left: 25%;
     padding-right: 25%;
     text-align: justify;
