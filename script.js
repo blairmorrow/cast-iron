@@ -1,12 +1,12 @@
 ﻿// Project: Cast Iron
 // Author: Blair Morrow
 
-// Declare variables for the header element of the page and the top offset pixels for the header
-let header = document.getElementById("stickyHeader");
-let sticky = header.offsetTop;
-
 // When scrolling the web page call this function
 window.onscroll = function () {
+
+    // Declare variables for the header element of the page and the top offset pixels for the header
+    var header = document.getElementById("stickyHeader");
+    var sticky = header.offsetTop;
 
     // If the y-axis offset is greater than the header top offset
     if (window.pageYOffset > sticky) {
@@ -24,4 +24,27 @@ window.onscroll = function () {
 
     }
 
-};
+}
+
+// When the burger icon is clicked call this function
+function responsiveMenu() {
+
+    // Declare variable for the navigation div identifier
+    var x = document.getElementById("navMenu");
+
+    // If the responsive menu is inactive
+    if (x.className === "navigation") {
+
+        // Make it active
+        x.className += " responsive";
+
+    }
+    // Otherwise, if it is active
+    else {
+
+        // Make it inactive
+        x.className = "navigation";
+
+    }
+
+}
