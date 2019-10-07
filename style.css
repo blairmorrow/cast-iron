@@ -70,6 +70,7 @@ body {
     animation-fill-mode: forwards;
 }
 
+/*Burger icon for smaller browser sizes*/
 .menuResponsive {
     color: #FFF;
     display: none;
@@ -218,6 +219,8 @@ body {
     }
 }
 
+/*Smaller browser size compatability*/
+/*Passive adjustments made to smaller browser windows*/
 @media screen and (max-width: 600px) {
     .header { padding-bottom: 3.5px; }
     .header img { margin-left: 4%; }
@@ -238,6 +241,7 @@ body {
     }
 }
 
+/*Active adjustments made when the user clicks on the burger icon*/
 @media screen and (max-width: 600px) {
     .navigation.responsive { position: relative; }
     .navigation.responsive .menuResponsive {
