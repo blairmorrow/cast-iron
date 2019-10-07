@@ -231,6 +231,9 @@ body {
         right: 6%;
         top: 0;
     }
+    .contentHeader {
+        font-size: 30px;
+    }
     .mapContainer {
         margin-left: 15%;
         width: 70%;
